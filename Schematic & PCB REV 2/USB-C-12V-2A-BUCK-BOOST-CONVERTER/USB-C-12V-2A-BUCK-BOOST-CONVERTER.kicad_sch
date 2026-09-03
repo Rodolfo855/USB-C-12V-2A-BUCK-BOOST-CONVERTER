@@ -2050,6 +2050,131 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "power:+12V"
+			(power)
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "#PWR"
+				(at 0 -3.81 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Value" "+12V"
+				(at 0 3.556 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Power symbol creates a global label with name \"+12V\""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "global power"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "+12V_0_1"
+				(polyline
+					(pts
+						(xy -0.762 1.27) (xy 0 2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 2.54) (xy 0.762 1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 0) (xy 0 2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "+12V_1_1"
+				(pin power_in line
+					(at 0 0 90)
+					(length 0)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "power:GND"
 			(power)
 			(pin_numbers
@@ -2525,6 +2650,12 @@
 		(uuid "bcee6bb9-6f5d-4854-9974-49dd4bbc2e53")
 	)
 	(junction
+		(at 242.57 63.5)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "bfe83405-e2ab-4b22-b144-7390d355172d")
+	)
+	(junction
 		(at 171.45 39.37)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -2818,6 +2949,16 @@
 	)
 	(wire
 		(pts
+			(xy 242.57 57.15) (xy 242.57 63.5)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "24c59c32-2d36-4a23-9e95-7d95c16b19b9")
+	)
+	(wire
+		(pts
 			(xy 176.53 39.37) (xy 176.53 45.72)
 		)
 		(stroke
@@ -3085,6 +3226,16 @@
 			(type default)
 		)
 		(uuid "5bc3f644-c527-4e17-8c16-620c0a9d8c37")
+	)
+	(wire
+		(pts
+			(xy 242.57 63.5) (xy 251.46 63.5)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5bffd04f-17b1-48f9-ab87-ee77bab54b9c")
 	)
 	(wire
 		(pts
@@ -3618,7 +3769,7 @@
 	)
 	(wire
 		(pts
-			(xy 232.41 63.5) (xy 251.46 63.5)
+			(xy 232.41 63.5) (xy 242.57 63.5)
 		)
 		(stroke
 			(width 0)
@@ -5520,6 +5671,71 @@
 			(project "USB-C-12V-2A-BUCK-BOOST-CONVERTER"
 				(path "/f00a0146-1e8a-4350-8e7c-b38eb693fd7a"
 					(reference "C10")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+12V")
+		(at 242.57 57.15 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "662a8c5f-b90b-4eeb-becc-3d392a708ff7")
+		(property "Reference" "#PWR024"
+			(at 242.57 60.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+12V"
+			(at 242.316 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 242.57 57.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 242.57 57.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+12V\""
+			(at 242.57 57.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "cce69bb9-3cd8-441e-bf5e-7f3b93fb712d")
+		)
+		(instances
+			(project ""
+				(path "/f00a0146-1e8a-4350-8e7c-b38eb693fd7a"
+					(reference "#PWR024")
 					(unit 1)
 				)
 			)
