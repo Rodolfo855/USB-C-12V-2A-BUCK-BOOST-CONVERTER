@@ -74,7 +74,7 @@
 			(mirror no)
 			(drillshape 0)
 			(scaleselection 1)
-			(outputdirectory "C:/Users/Victor Rosales/Documents/USB-C-12V-2A-BUCK-BOOST-CONVERTER/GerberFiles/")
+			(outputdirectory "C:/Users/Victor Rosales/Documents/USB-C-12V-2A-BUCK-BOOST-CONVERTER/Schematic & PCB REV 2/Gerber_V2/")
 		)
 	)
 	(net 0 "")
